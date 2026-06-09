@@ -140,9 +140,56 @@ WordPressにコピペで使えます。
 
 ---
 
+## C｜Threads投稿（IG連動・ブログ連動・時事）
+
+### Threads共通ルール
+
+- **accountId**: `7202` / **platform**: `"threads"` / mediaUrls: 空でOK / 500文字以内 / ハッシュタグ最大5個
+- 話し言葉・改行多用・重い句読点を避ける / 絵文字1〜3個
+- IG連動でも転載はしない → 別の切り口で書き直す
+
+### ハッシュタグセット（5個以内で選ぶ）
+
+- 教育: `#カナダ教育 #海外子育て #バイリンガル育児 #横並び教育 #jp_ca_momlife`
+- マネー: `#カナダ生活 #海外移住 #二拠点生活 #資産形成 #jp_ca_momlife`
+- 日常: `#カルガリー #カナダ子育て #ワーママ #海外移住 #jp_ca_momlife`
+- 時事: `#カナダ #AI #キャリア #海外移住 #jp_ca_momlife`
+
+### C-1: IG連動Threads（月・水・土 JST 21:30 = UTC 12:30）
+
+1. IGカルーセルの「一番刺さるひとこと」を冒頭に置く
+2. 100〜250字。「インスタに詳しくまとめました👆プロフのリンクから」で締める
+3. Blotatoで JST 21:30 に予約
+4. Slackの `#sns投稿確認`（ID: `C0B8BC4BKV3`）に「📱 Threads連動下書き」として通知
+
+### C-2: ブログ連動Threads（公開翌日 JST 12:00 = UTC 3:00）
+
+1. 以下のファイルを読んで、未連動の公開済み記事を確認する：
+   ```
+   https://raw.githubusercontent.com/goraishared-design/jp.ca.momlife/main/blog/published_articles.md
+   ```
+2. 記事の「一番驚く事実・数字」を冒頭に1行
+3. 本文末尾にURL（gcff.jp/…）を直接記載（Threadsでリンク化）
+4. Blotatoで JST 12:00 に予約
+
+### C-3: 時事ネタThreads（火・木 発火時 → あれば JST 20:00 = UTC 11:00）
+
+1. Web検索で以下を確認（Bloomberg / NYT / Statistics Canada / 文科省 / 航空業界）
+2. 教育・AI・カナダ・キャリア・航空関連で注目ニュースが1件以上あれば作成。なければスキップ
+3. 「ニュース要約1〜2行」→「業界の内側にいた人・データを読んできた人としての一言」→「ハッシュタグ」
+4. Blotatoで JST 20:00 に予約
+
+### C-4: 単発日常Threads（土曜 JST 18:00 = UTC 9:00）
+
+1. カルガリーの季節・子育て・二拠点あるあるを100字程度
+2. オチか共感ポイントで締める。ネタがなければスキップ
+
+---
+
 ## トラブル時
 
 - Canva の `replace_text` が "No approval received" → `find_and_replace_text` に切り替える。
 - 画像URLが弾かれる → Canva一時URLをBlotatoの presigned upload 経由で永続URL化する。
-- GitHub API が到達不可 → planned_topics.md は直前のSlack通知から内容を把握し、後で同期。
+- GitHub API が到達不可 → published_articles.md / planned_topics.md は直前のSlack通知から内容を把握し、後で同期。
 - ファクトチェックで信頼できる情報が見つからない → 「現時点で確認できる信頼性のある情報は存在しません」と明記し、推測で補完しない。
+- Threads投稿でエラー → ハッシュタグを5個以内に削減して再試行。
