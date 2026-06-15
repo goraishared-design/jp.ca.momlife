@@ -131,9 +131,15 @@ https://raw.githubusercontent.com/goraishared-design/jp.ca.momlife/main/content/
 ```
 
 ### A-6: Blotato に予約投稿を登録
-- Canva `export-design` で各ページをエクスポート（一時URL取得）
-- `blotato_create_presigned_upload_url` で永続URL化
-- `blotato_create_post` で予約（Instagram account ID: `51161`、JST 21:00 = UTC 12:00）
+
+**手順1（まず試す）**：
+- Canva `export-design` で各ページをJPGエクスポート（一時URL取得）
+- そのエクスポートURLを **そのまま** `blotato_create_post` の `mediaUrls` に渡して予約（Instagram account ID: `51161`、JST 21:00 = UTC 12:00）
+- Blotato側のサーバーが直接フェッチするため、Claudeの作業環境のネットワーク制限を回避できる（2026/6/15に成功実績あり）
+
+**手順2（手順1が失敗した場合のフォールバック）**：
+- `blotato_create_presigned_upload_url` で永続URL化してから `blotato_create_post` に渡す
+- これも失敗する場合は、Canva編集URLと手動アップロード手順をSlackの `#sns投稿確認` に送り、うりに手動対応を依頼する
 
 ---
 
@@ -276,9 +282,10 @@ WordPressにコピペで使えます。
 ## トラブル時
 
 - Canva の `replace_text` が "No approval received" → `find_and_replace_text` に切り替える。
-- 画像URLが弾かれる → Canva一時URLをBlotatoの presigned upload 経由で永続URL化する。
+- 画像URLが弾かれる → まずCanva `export-design` のURLを直接Blotatoの `mediaUrls` に渡す（手順1）。それでも失敗する場合のみ presigned upload 経由で永続URL化する（手順2）。両方失敗したらうりに手動アップロードを依頼。
 - GitHub API が到達不可 → published_articles.md / planned_topics.md は直前のSlack通知から内容を把握し、後で同期。
 - ファクトチェックで信頼できる情報が見つからない → 「現時点で確認できる信頼性のある情報は存在しません」と明記し、推測で補完しない。
 - Threads投稿でエラー → ハッシュタグを5個以内に削減して再試行。
+
 
 
