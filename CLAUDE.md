@@ -88,11 +88,13 @@
 ## A｜IGカルーセル下書き（公開前日 JST 22:00 に実行）
 
 ### A-1: plan.md を読む
-以下のURLから最新版を取得する：
+以下のURLから**毎回必ず新規に**取得する（キャッシュ・前回セッションの記憶は使わない）：
 ```
 https://raw.githubusercontent.com/goraishared-design/jp.ca.momlife/main/content/plan.md
 ```
 `status: 次` の中で最も日付が近い投稿を1件選ぶ。
+
+**⚠️ 重要**：plan.mdはうりが直前に編集している可能性が常にある。実行直前に取得したファイルだけを正とし、それ以前にチャットで見た内容・記憶している内容は使わない。
 
 ### A-2: 時事ネタをチェック（30秒で判断）
 教育・マネー・日常に関連する最新ニュースをWeb検索。Bloomberg / NYT / 公的統計を優先。関連があれば1スライドに差し込む。なければスキップ。
@@ -108,7 +110,7 @@ https://raw.githubusercontent.com/goraishared-design/jp.ca.momlife/main/content/
 4. 必要なら背景写真を差し替え（`upload-asset-from-url` → `update_fill`）。
 5. プレビュー確認 → `commit-editing-transaction` で保存。
 
-### A-5: Slack への通知（3チャンネルに分けて送る）
+### A-5: Slack に下書きを通知（確認依頼のみ・予約はまだしない）
 
 **① #sns投稿確認**（`C0B8BC4BKV3`）— レビュー依頼
 ```
@@ -116,9 +118,9 @@ https://raw.githubusercontent.com/goraishared-design/jp.ca.momlife/main/content/
 *タイトル*：[タイトル]
 *Canva編集URL*：https://www.canva.com/d/[デザインID]
 
-🕘 Blotatoに本日 JST 21:00 で予約登録しました。
-✏️ 修正 → Canvaで直接 or このスレッドに返信
-🚫 止めたい場合 → Blotatoダッシュボードでキャンセル
+⏸️ *まだBlotatoには予約していません。* このスレッドに「OK」「投稿してOK」などの返信、または👍リアクションをいただいてから予約します。
+✏️ 修正がある場合：Canvaで直接編集するか、このスレッドに返信してください。
+⏰ 投稿予定時刻：[日付] JST 21:00
 ```
 
 **② #ig-caption**（`C0B9SRCC9R8`）— キャプション本文（コピペ用）
@@ -131,6 +133,11 @@ https://raw.githubusercontent.com/goraishared-design/jp.ca.momlife/main/content/
 ```
 
 ### A-6: Blotato に予約投稿を登録
+
+**⚠️ 必須条件：A-5の確認を得てから実行する**
+- 同一Routine実行内では即予約しない。A-5を送って実行を終了する。
+- うりからの「OK」返信・👍リアクション・もしくは別チャットでの明示的な指示があった場合のみ、以下を実行する。
+- 確認なしで時間切れ（投稿時刻が来る）になった場合は予約せず、Slackに「確認が取れなかったため本日の投稿は見送りました」と通知する。
 
 **手順1（まず試す）**：
 - Canva `export-design` で各ページをJPGエクスポート（一時URL取得）
@@ -227,6 +234,8 @@ WordPressにコピペで使えます。
 
 ### C-1: IG連動Threads（月・水・土 JST 21:30 = UTC 12:30）
 
+**⚠️ 前提条件**：同日のIGカルーセル（A-6）がうりの確認を得て予約済みであることを確認してから実行する。IG側がまだ未確認・見送りの場合、Threads側も予約しない。
+
 1. IGカルーセルの「一番刺さるひとこと」を冒頭に置く
 2. 100〜250字。「インスタに詳しくまとめました👆プロフのリンクから」で締める
 3. Blotatoで JST 21:30 に予約
@@ -286,6 +295,8 @@ WordPressにコピペで使えます。
 - GitHub API が到達不可 → published_articles.md / planned_topics.md は直前のSlack通知から内容を把握し、後で同期。
 - ファクトチェックで信頼できる情報が見つからない → 「現時点で確認できる信頼性のある情報は存在しません」と明記し、推測で補完しない。
 - Threads投稿でエラー → ハッシュタグを5個以内に削減して再試行。
+- plan.mdを編集した直後にRoutineが古い内容で動いてしまった（2026/6/13発生）→ 再発防止のためA-6・C-1に「うりの確認後に予約」ルールを追加済み。確認なしでBlotato予約は絶対に行わない。
+
 
 
 
