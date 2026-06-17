@@ -152,6 +152,8 @@ https://raw.githubusercontent.com/goraishared-design/jp.ca.momlife/main/content/
 
 ## B｜ブログ記事下書き（公開前日 JST 22:00 に実行）
 
+> **ブログとIGの前後関係**：ブログはIGの前に出せると理想だが、間に合わない場合はIGを先に投稿し、ブログを後から公開してもよい（連動の順番は厳密でなくてよい）。
+
 ### B-1: planned_topics.md を読む
 以下のURLから最新版を取得する：
 ```
@@ -182,14 +184,25 @@ https://raw.githubusercontent.com/goraishared-design/jp.ca.momlife/main/blog/pla
 - 数値・制度名は必ず一次情報で確認。信頼できるソースがない場合は「現時点で確認できる信頼性のある情報は存在しません」と記し、推測で補完しない
 
 ### B-4: 下書きを書く（Cocoon HTML形式）
-WordPress / Cocoonテーマ用のHTMLブロック形式で出力。以下を積極的に活用：
-- 吹き出し（うり：右・watery-green）でうりの実体験・感情を入れる
-- タブボックス（tab-caption-box）で情報整理
-- HTMLの表（wp:table or wp:html内）で図解・比較表
-- アイコンリスト（iconlist-box）で箇条書き
-- CTAボタンと関連記事ブログカードで送客動線
 
-文字数の目安：3,000〜5,000字（SEO・読者の満足度を両立する長さ）
+**⚠️ 最優先ルール：執筆前に必ず `blog/HTML_STYLE_GUIDE.md` を新規取得して読むこと。**
+```
+https://raw.githubusercontent.com/goraishared-design/jp.ca.momlife/main/blog/HTML_STYLE_GUIDE.md
+```
+このスタイルガイドのテンプレートを**コピーして埋める**形で記事を書く。新しい書式・ショートコード・クラス名を自分で考案してはいけない（過去に既存記事のデザインと揃わない下書きが生成された問題への対応）。
+
+ガイドの特に重要な点（詳細は必ずガイド本体を参照）：
+- 吹き出しは **Cocoonブロックコメント形式**（`wp:cocoon-blocks/balloon-ex-box-1`）。`[speech_bubble ...]` のようなショートコードは**存在しないので絶対に使わない**
+- 著者名は必ず **Julie**（「うり」にしない）
+- 全段落を `<!-- wp:paragraph -->` で囲む。見出しも `<!-- wp:heading -->` で囲む
+- 表は**ネイビーヘッダー（#0d2240）＋ゼブラストライプ**のinline style形式。装飾なしの `<table>` は禁止
+- 強調は `<span class="marker-under">` / `marker-under-red`（下線）を1〜2箇所に絞って使う
+- タブボックス・blogcard・カード型図解もガイドの正式形式に従う
+- 記事構成はガイド末尾「記事の標準テンプレート構成」の順番（リード文→Julie吹き出し→この記事でわかること→本編→まとめ→blogcard送客）で書く
+
+文字数の目安：3,000〜5,000字。確認できない情報は推測で埋めず「現時点で確認できる信頼性のある情報は存在しません」と書く。出典は本文または表の下に明記。
+
+下書きは `blog/drafts/` フォルダに `.html` で保存する。
 
 ### B-5: Slack への通知（2チャンネルに分けて送る）
 
@@ -296,6 +309,7 @@ WordPressにコピペで使えます。
 - ファクトチェックで信頼できる情報が見つからない → 「現時点で確認できる信頼性のある情報は存在しません」と明記し、推測で補完しない。
 - Threads投稿でエラー → ハッシュタグを5個以内に削減して再試行。
 - plan.mdを編集した直後にRoutineが古い内容で動いてしまった（2026/6/13発生）→ 再発防止のためA-6・C-1に「うりの確認後に予約」ルールを追加済み。確認なしでBlotato予約は絶対に行わない。
+
 
 
 
