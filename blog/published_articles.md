@@ -1,4 +1,4 @@
-# 公開済みブログ記事一覧 — gcff.jp
+Y# 公開済みブログ記事一覧 — gcff.jp
 
 > Routineがブログ連動Threadsを作る際に参照するファイル。
 > 記事公開のたびにここに追記する。
@@ -21,6 +21,7 @@
 | 7 | 海外移住、子供は何歳で連れて行くのが正解？中受・英語力・永住のシナリオ別に解説 | https://gcff.jp/global_learnings/best_age_for_immigration/ | 教育 | 2026-06 | false |
 | 8 | カナダから一時帰国時、カナダドルを円に戻す一番お得な方法【2026年版】 | https://gcff.jp/overseas_life/cadjpyexchange/ | マネー | 2026-06 | false |
 | 9 | Wiseカード vs ソニー銀行デビット 徹底比較【カナダ在住者向け2026年版】 | https://gcff.jp/overseas_life/wise_vs_sonybank/ | マネー | 2026-06 | false |
+| 10 | 【出発前必須！】WiseアプリでWiseカードにチャージする方法を画面付きで解説 | https://gcff.jp/overseas_life/wise_charge/ | マネー | 2026-06（正確な日付要確認） | false |
 
 ---
 
@@ -31,4 +32,3 @@
 ```
 
 Routineがブログ連動Threadsを投稿したら `false` → `true` に変更する。
-
