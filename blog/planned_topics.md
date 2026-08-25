@@ -659,7 +659,7 @@
 > 詳細な構成案は別途 `mothership_structure.md` 参照（母艦記事の章立て・内部リンク設計）。
 
 ### 25｜【母艦】駐在妻の帰国後キャリア完全ガイド｜ブランクの説明から再就職・転職まで
-- **status**: 次
+- **status**: 下書き済（2026-08-25 下書き完成：blog/drafts/chuzuma-career-guide-mothership-20260825.html。子記事26〜29は未執筆のため、既存公開記事6本（chuzuma_carrier / upskills / stresses_in_japanese_company / gaishi_tenshoku / jobchangefromoverseas / jobchangeservices / flexcarrier）へのblogcardのみ設置。子記事が公開され次第、内部リンクを追加すること）
 - **priority**: ⭐️⭐️⭐️（クラスターのハブ。最重要）
 - **タイトル案**：「駐在妻の帰国後キャリア完全ガイド｜ブランクの説明から再就職・転職まで【元駐妻アナリストの実体験】」
 - **カテゴリ**：マネー/キャリア
