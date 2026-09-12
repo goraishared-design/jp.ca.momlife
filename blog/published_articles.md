@@ -27,8 +27,15 @@
 | 13 | 海外からの転職は可能？メリット・デメリットと押さえるべきポイント | https://gcff.jp/overseas_life/jobchangefromoverseas/ | マネー/キャリア | 日付要確認（8/29週次メンテナンスでWeb検索から発見） | false |
 | 14 | LinkedInの効果的な使い方を元外資系アナリストが徹底解説！ | https://gcff.jp/overseas_life/linkedin_usage/ | マネー/キャリア | 日付要確認（8/29週次メンテナンスでWeb検索から発見） | false |
 | 15 | 【2026年版】クラウドワークスで海外からリモートワークする際の利用方法と注意点 | https://gcff.jp/overseas_life/crowdworks/ | マネー/キャリア | 日付要確認（8/29週次メンテナンスでWeb検索から発見） | false |
+| 16 | 【2026年版】ペイオニア（Payoneer）の登録方法を画像付きで解説｜Wiseとの比較 | https://gcff.jp/overseas_life/payoneer/ | マネー | 日付要確認（2026-09-12週次メンテナンスでWeb検索から発見） | false |
+| 17 | ソニー銀行が海外旅行や海外移住の準備段階に絶対におすすめの理由｜現金プレゼントの紹介特典も | https://gcff.jp/overseas_life/sony_bank/ | マネー | 日付要確認（2026-09-12週次メンテナンスでWeb検索から発見） | false |
+| 18 | TopResumeとは？レジュメ作成サービスを実際に使ったレビュー | https://gcff.jp/overseas_life/topresume/ | マネー/キャリア | 日付要確認（2026-09-12週次メンテナンスでWeb検索から発見） | false |
+| 19 | SHElikesとは？海外在住期間に副業スキルを身に着けよう！ | https://gcff.jp/overseas_life/shelikes/ | マネー/キャリア | 日付要確認（2026-09-12週次メンテナンスでWeb検索から発見） | false |
+| 20 | 円安なのに給料が上がらない⁉｜円安と給料の関係を分かりやすく図解 | https://gcff.jp/overseas_life/weakyen_impact_salary/ | マネー | 日付要確認（2026-09-12週次メンテナンスでWeb検索から発見） | false |
+| 21 | ゆるキャリ/フレキャリのすゝめ ～人生の一部分の「働く」について考える～ | https://gcff.jp/overseas_life/flexcarrier/ | マネー/キャリア | 日付要確認（2026-09-12週次メンテナンスでWeb検索から発見。planned_topics.mdトピック27で「既存記事」として言及されていたflexcarrierのURLを確認できた） | false |
 
-> **#11〜15について**：この環境からgcff.jpへの直接アクセスがネットワーク制限でブロックされているため（8/22以降複数回確認済み）、トップページとの突合ができていません。代わりにWeb検索でヒットしたタイトル・URLのみを一次情報として追記しました。公開日・カテゴリはうりさんに確認をお願いします。また `planned_topics.md` のトピック25〜29（駐在妻キャリア・クラスター）で「既存公開記事」として言及されている chuzuma_carrier / upskills / stresses_in_japanese_company / gaishi_tenshoku / jobchangeservices / flexcarrier はWeb検索でヒットせず、URLを確認できませんでした。実在する場合は正確なURLの追記をお願いします。
+> **#11〜21について**：この環境からgcff.jpへの直接アクセスがネットワーク制限でブロックされているため（8/22以降複数回確認済み、2026-09-12も再確認）、トップページとの完全な突合ができていません。代わりにWeb検索でヒットしたタイトル・URLのみを一次情報として追記しました。公開日・カテゴリはうりさんに確認をお願いします。
+> `planned_topics.md` のトピック25〜29（駐在妻キャリア・クラスター）で「既存公開記事」として言及されている chuzuma_carrier / upskills / stresses_in_japanese_company / gaishi_tenshoku / jobchangeservices のうち、**flexcarrier のみ2026-09-12の検索で存在確認できました**（#21として追記）。残り5本（chuzuma_carrier / upskills / stresses_in_japanese_company / gaishi_tenshoku / jobchangeservices）はWeb検索でヒットせず、URLを確認できていません。実在する場合は正確なURLの追記をお願いします。
 
 ---
 
